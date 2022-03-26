@@ -5,18 +5,16 @@ except:
 finally:
     print('The "try" is finished')
 
-
-
-
 x = -1
 
 if x < 0:
     raise Exception("Sorry, no numbers below zero")
 
-
-
 try:
-    f = open("demofile.txt")
+    f = open("demofile.txt", "r")
+    f = open("demofile.txt", "w")
+    f = open("demofile.txt", "a")
+    f = open("demofile.txt", "x")
     try:
         f.write("Lorum Ipsum")
     except:
